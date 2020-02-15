@@ -12,7 +12,7 @@ This plug-in illustrates how to use the intents API, in Android, to communicate 
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [launch-sms.fieldplugin.zip](launch-sms.fieldplugin.zip) file from this repo, and attach it to your form. Set the `number` parameter for the field plug-in.
+**To use this plug-in as-is**, just download the [launch-sms-app.fieldplugin.zip](launch-sms-app.fieldplugin.zip) file from this repo, and attach it to your form. Set the `number` parameter for the field plug-in.
 
 To create your own field plug-in using this as a template, follow these steps:
 
