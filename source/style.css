@@ -1,0 +1,44 @@
+.button-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 15px;
+  display: block;
+  min-width: 250px;
+  
+}
+
+button {
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#status-container {
+    color: #ff6c00;
+    padding: 6px;
+    text-align: center;
+}
