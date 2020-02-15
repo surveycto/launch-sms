@@ -1,22 +1,18 @@
-# simple-svg-imagemap
+# launch-sms-app
 
 ![](extras/preview.jpg)
 
 ## Description
 
-This plug-in adds a clickable SVG image below a text field (specifically, an image of a truck). Clicking on a region fills in the text field with the ID of that region.
+This plug-in illustrates how to use the intents API, in Android, to communicate with external apps. It receives a phone number as parameter and provides a button to send a SMS to that number.
 
 ## Features
 
-* Supports the `text` field type.
-* Supports the following SurveyCTO field properties:
-
-    * Default values
-    * Read only
+* Supports the `text` field type but doesn't provide any data collection capability.
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [simple-svg-imagemap.fieldplugin.zip](simple-svg-imagemap.fieldplugin.zip) file from this repo, and attach it to your form.
+**To use this plug-in as-is**, just download the [launch-sms.fieldplugin.zip](launch-sms.fieldplugin.zip) file from this repo, and attach it to your form. Set the `number` parameter for the field plug-in.
 
 To create your own field plug-in using this as a template, follow these steps:
 
