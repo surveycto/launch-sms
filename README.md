@@ -1,6 +1,6 @@
 # launch-sms-app
 
-![](extras/preview.jpg)
+![](extras/preview.png)
 
 ## Description
 
