@@ -1,6 +1,6 @@
 {
-	"name" : "Launch SMS App",
+	"name" : "Example - Launch SMS App",
 	"author" : "Dobility",
-	"version": "1.0.0",
+	"version": "1.0.6",
 	"supportedFieldTypes": ["text"]
 }

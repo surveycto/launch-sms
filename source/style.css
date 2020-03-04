@@ -1,44 +1,42 @@
-.button-containers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5px;
+.text-muted {
+	color: rgba(0,0,0,.5);
 }
-
+.message-preview-container {
+	border: 1px solid #047CC2;
+	border-radius: 4px;
+	padding: .5rem;
+}
 button {
-  margin-top: 15px;
-  display: block;
-  min-width: 250px;
-  
+	cursor: pointer;
+	padding: .75rem;
+	border-radius: 4px;
+	background-color: #047CC2;
+	color: white;
+	font-weight: bold;
+	margin-top: 1rem;
+	width: 100%;
 }
-
-button {
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	font-weight:bold;
-	padding:6px 16px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-}
-
 button:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
+	background-color: #047CC2;
 }
-
 button:active {
 	position:relative;
 	top:1px;
 }
-
 #status-container {
     color: #ff6c00;
     padding: 6px;
     text-align: center;
+}
+
+.if-no-intents-support {
+	display: none;
+}
+.web-collect .if-no-intents-support,
+.ios-collect .if-no-intents-support {
+	display: block;
+}
+.web-collect .buttons-container,
+.ios-collect .buttons-container {
+	display: none;
 }
