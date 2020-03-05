@@ -25,22 +25,24 @@
 
 <p class="text-muted">Message preview:</p>
 
-<div class="message-preview-container">
-   <p>
-      <small class="text-muted">To:</small>
-      <div id="sms-preview-number-container"></div>
-   </p>
-   <p>
-      <small class="text-muted">Message:</small>
-      <div id="sms-preview-message-container"></div>
-   </p>
+<div class="container">
+   <div class="message-preview-container">
+      <p>
+         <small class="text-muted">To:</small>
+         <div id="sms-preview-number-container"></div>
+      </p>
+      <p>
+         <small class="text-muted">Message:</small>
+         <div id="sms-preview-message-container"></div>
+      </p>
+   </div>
 </div>
 
-<div class="button-containers">
+<div class="container if-intents-support">
    <button {{#READONLY}}disabled{{/READONLY}} id="btn-send-sms">SEND SMS</button>
 </div>
 
-<div class="if-no-intents-support">
+<div class="container if-no-intents-support">
    <button disabled>SEND SMS</button>
    <p><strong>Note:</strong> the platform you are using does not support using Android intents. Please open this form in Android Collect if you want to access the full functionality.</p>
 </div>
