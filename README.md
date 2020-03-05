@@ -1,29 +1,33 @@
-# launch-sms-app
+# Example - launch SMS
 
 ![](extras/preview.jpg)
 
 ## Description
 
-This plug-in illustrates how to use the intents API, in Android, to communicate with external apps. It receives a phone number as parameter and provides a button to send a SMS to that number.
+This plug-in illustrates how to use the intents API, in Android, to automatically compose an SMS text message and launch the default SMS app on the device. It receives a phone number and a message as parameters, and provides a button to launch the SMS app (using the number and message from the parameters).
 
 ## Features
 
-* Supports the `text` field type but doesn't provide any data collection capability.
+* Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters. 
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [launch-sms-app.fieldplugin.zip](launch-sms-app.fieldplugin.zip) file from this repo, and attach it to your form. Set the `number` parameter for the field plug-in.
+1. Download the test form [extras/test-form](extras/test-form) from this repo and upload it to your SurveyCTO server.
+1. Download the [example-launch-sms.fieldplugin.zip](example-launch-sms.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
+1. Make sure to provide the correct paramters (see below).
 
-To create your own field plug-in using this as a template, follow these steps:
+## Required parameters
 
-1. Fork this repo
-1. Make changes to the files in the `source` directory.
+| Key | Value |
+| --- | --- |
+| `number` | The phone number to which the SMS should be sent. |
+| `message` | The body of the text message. |
 
-    * **Note:** be sure to update the `manifest.json` file as well.
-
-1. Zip the updated contents of the `source` directory.
-1. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
-1. You may then attach your new .fieldplugin.zip file to your form as normal.
+*Note: it is suggested to use values stored in other fields for the parameters. Take a look at the test form to see how this is accomplished.
 
 ## More resources
-More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+
+* **Test form**  
+[extras/test-form](extras/test-form)
+* **Developer documentation for field plug-ins**  
+More instructions for developing and using field plug-ins. [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
