@@ -8,7 +8,9 @@ This plug-in illustrates how to use the intents API, in Android, to automaticall
 
 ## Features
 
-* Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters. 
+* Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters.
+* If the SMS app is successfully launched, the field's response will be stored as:  
+    > The following SMS was sent to [number]: '[message]'.
 
 ## How to use
 
