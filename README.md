@@ -1,6 +1,6 @@
 # Example - launch SMS
 
-![](extras/preview.jpg)
+![](extras/example-launch-sms.jpg)
 
 ## Description
 
