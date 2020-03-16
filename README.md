@@ -1,6 +1,6 @@
 # Example - launch SMS
 
-![](extras/example-launch-sms.jpg)
+![](extras/launch-sms.jpg)
 
 ## Description
 
@@ -15,7 +15,7 @@ This plug-in illustrates how to use the intents API, in Android, to automaticall
 ## How to use
 
 1. Download the test form [extras/test-form](extras/test-form) from this repo and upload it to your SurveyCTO server.
-1. Download the [example-launch-sms.fieldplugin.zip](example-launch-sms.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
+1. Download the [launch-sms.fieldplugin.zip](launch-sms.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
 1. Make sure to provide the correct paramters (see below).
 
 ## Required parameters
