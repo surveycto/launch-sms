@@ -1,4 +1,4 @@
-# Example - launch SMS
+# Launch SMS
 
 ![](extras/launch-sms.jpg)
 
