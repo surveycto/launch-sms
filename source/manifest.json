@@ -1,5 +1,5 @@
 {
-	"name" : "Example - Launch SMS",
+	"name" : "Launch SMS",
 	"author" : "Dobility",
 	"version": "1.0.13",
 	"supportedFieldTypes": ["text"]
