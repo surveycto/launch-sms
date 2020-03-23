@@ -4,7 +4,7 @@
 
 ## Description
 
-This plug-in illustrates how to use the intents API, in Android, to automatically compose an SMS text message and launch the default SMS app on the device. It receives a phone number and a message as parameters, and provides a button to launch the SMS app (using the number and message from the parameters).
+This plug-in can automatically compose an SMS text message and launch the default SMS app on an Android device. It receives a phone number and a message as parameters, and provides a button to launch the SMS app (using the number and message from the parameters).
 
 ## Features
 
