@@ -10,24 +10,32 @@
 .container {
 	padding: 0 .5rem;
 }
-button {
+#status-container {
+    padding: 6px;
+    text-align: center;
+}
+/* START button styles */
+a.button {
 	cursor: pointer;
 	padding: .75rem;
 	border-radius: 4px;
 	background-color: #047CC2;
 	color: white;
 	font-weight: bold;
-	margin-top: 1rem;
 	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
 }
-button:hover {
+a.button:hover {
 	background-color: #047CC2;
 }
-button:active {
+a.button:active {
 	position:relative;
 	top:1px;
 }
-#status-container {
-    padding: 6px;
-    text-align: center;
+a.button:disabled {
+	opacity: 0.5
 }
+/* END button styles */
