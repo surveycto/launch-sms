@@ -1,44 +1,64 @@
-.text-muted {
-	color: rgba(0,0,0,.5);
-}
 .message-preview-container {
 	border: 1px solid #047CC2;
 	border-radius: 4px;
-	padding: 0 .5rem;
+	padding: 1rem;
 	box-sizing: border-box;
 }
-.container {
-	padding: 0 .5rem;
+#status-container {
+	padding: 6px;
+	text-align: center;
 }
-button {
+
+/* START global styles */
+.hidden {
+	display: none;
+}
+.text-muted {
+	color: rgba(0,0,0,.5);
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+.container {
+	padding: 1rem;
+	box-sizing: border-box;
+}
+.center {
+	text-align: center;
+	justify-content: center;
+}
+/* END global styles */
+
+/* START button styles */
+a.button {
 	cursor: pointer;
 	padding: .75rem;
 	border-radius: 4px;
 	background-color: #047CC2;
 	color: white;
 	font-weight: bold;
-	margin-top: 1rem;
 	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
 }
-button:hover {
+a.button:hover {
 	background-color: #047CC2;
 }
-button:active {
-	position:relative;
-	top:1px;
+a.button:active {
+	position: relative;
+	top: 1px;
 }
-#status-container {
-    padding: 6px;
-    text-align: center;
+a.button:disabled,
+a.button.disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
 }
-.if-no-intents-support {
-	display: none;
-}
-.web-collect .if-no-intents-support,
-.ios-collect .if-no-intents-support {
-	display: block;
-}
-.web-collect .if-intents-support,
-.ios-collect .if-intents-support {
-	display: none;
-}
+/* END button styles */

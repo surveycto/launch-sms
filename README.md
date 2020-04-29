@@ -4,7 +4,7 @@
 
 ## Description
 
-This plug-in can automatically compose an SMS text message and launch the default SMS app on an Android device. It receives a phone number and a message as parameters, and provides a button to launch the SMS app (using the number and message from the parameters).
+This plug-in will compose an SMS text message and launch the default SMS app. It receives a phone number and a message as parameters, and provides a button to launch the SMS app (using the number and message from the parameters).
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/launch-sms/raw/master/launch-sms.fieldplugin.zip)
 
@@ -18,7 +18,7 @@ This plug-in can automatically compose an SMS text message and launch the defaul
 
 1. Download the test form [extras/test-form](https://github.com/surveycto/launch-sms/raw/master/extras/test-form/Launch%20SMS.xlsx) from this repo and upload it to your SurveyCTO server.
 1. Download the [launch-sms.fieldplugin.zip](https://github.com/surveycto/launch-sms/raw/master/launch-sms.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
-1. Make sure to provide the correct paramters (see below).
+1. Make sure to provide the correct parameters (see below).
 
 ## Required parameters
 
