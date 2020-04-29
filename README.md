@@ -10,9 +10,19 @@ This plug-in will compose an SMS text message and launch the default SMS app. It
 
 ## Features
 
-* Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters.
-* If the SMS app is successfully launched, the field's response will be stored as:  
-    > The following SMS was sent to [number]: '[message]'.
+* Supports the `text` field type, but doesn't provide an actual text input.
+
+## How the response is stored
+
+> SMS created. Recipient: `number`. Message: "`message`".
+
+* This response will use the `number` and `message` values from the parameters.
+* If you're using iOS or web forms, this response will be stored whenever the main button is clicked.
+* If you're using Android, this response will only be stored if the default SMS app was successfully launched.
+
+> There was an error creating the SMS: `error`
+
+* If you're using Android, the above response will be stored if there was an error launching the SMS app. The error message will contain more details about what went wrong.
 
 ## How to use
 
@@ -20,12 +30,13 @@ This plug-in will compose an SMS text message and launch the default SMS app. It
 1. Download the [launch-sms.fieldplugin.zip](https://github.com/surveycto/launch-sms/raw/master/launch-sms.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
 1. Make sure to provide the correct parameters (see below).
 
-## Required parameters
+## Parameters
 
 | Key | Value |
 | --- | --- |
 | `number` | The phone number to which the SMS should be sent. |
 | `message` | The body of the text message. |
+| `button_label` (optional) | The label of the button. If no `button_label` parameter is specified, the button will be labeled "Send SMS". |
 
 *Note: it is suggested to use values stored in other fields for the parameters. Take a look at the test form to see how this is accomplished.
 

@@ -22,9 +22,23 @@ if (!fieldProperties.READONLY) {
     }
   } else {
     btnSendSMS.setAttribute('href', 'sms:' + smsNumber + '&body=' + smsMessage)
+    btnSendSMS.onclick = function () {
+      saveResponse('success')
+    }
   }
 } else {
   btnSendSMS.classList.add('disabled')
+}
+
+// Define how to store the response
+function saveResponse (result) {
+  if (result === 'success') {
+    var successResponse = 'SMS created. Recipient: ' + smsNumber + '. Message: "' + smsMessage + '".'
+    setAnswer(successResponse)
+  } else {
+    var failResponse = 'There was an error creating the SMS: ' + result
+    setAnswer(failResponse)
+  }
 }
 
 // The following code sets up and launches the Android intent
@@ -38,11 +52,10 @@ function launchSMSUsingAndroidIntent () {
   launchIntent('android.intent.action.SENDTO', params, function (error, result) {
     // Something went wrong while launching the intent.
     if (error) {
+      saveResponse(error)
       statusContainer.innerHTML = error
-      return
     } else {
-      var successResponse = 'The following SMS was sent to ' + smsNumber + ': "' + smsMessage + '".'
-      setAnswer(successResponse)
+      saveResponse('success')
       statusContainer.innerHTML = 'Success!'
     }
   })
