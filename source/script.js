@@ -1,3 +1,4 @@
+var isAndroid = (document.body.className.indexOf("android-collect") >= 0)
 var smsNumber = getPluginParameter('number');
 var smsMessage = getPluginParameter('message');
 var previewNumberContainer = document.getElementById('sms-preview-number-container');
@@ -10,7 +11,16 @@ previewNumberContainer.innerHTML = smsNumber;
 previewMessageContainer.innerHTML = smsMessage;
 
 // define what the "Send SMS" button does
-btnSendSMS.onclick = function() {
+if (isAndroid) {
+  btnSendSMS.onclick = function () {
+    launchSMSUsingAndroidIntent()
+  }
+} else {
+  btnSendSMS.setAttribute('href', 'sms:' + smsNumber + '&body=' + smsMessage)
+}
+
+// The following code sets up and launches the Android intent
+function launchSMSUsingAndroidIntent () {
     // set the parameters for the intent
     var params = {
         uri_data: 'smsto:' + smsNumber,

@@ -38,13 +38,8 @@
    </div>
 </div>
 
-<div class="container if-intents-support">
-   <button {{#READONLY}}disabled{{/READONLY}} id="btn-send-sms">SEND SMS</button>
-</div>
-
-<div class="container if-no-intents-support">
-   <button disabled>SEND SMS</button>
-   <p><strong>Note:</strong> the platform you are using does not support using Android intents. Please open this form in Android Collect if you want to access the full functionality.</p>
+<div class="container">
+   <a class="button noselect" {{#READONLY}}disabled{{/READONLY}} id="btn-send-sms">Send SMS</a>
 </div>
 
 <div id="status-container"></div>

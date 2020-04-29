@@ -31,14 +31,3 @@ button:active {
     padding: 6px;
     text-align: center;
 }
-.if-no-intents-support {
-	display: none;
-}
-.web-collect .if-no-intents-support,
-.ios-collect .if-no-intents-support {
-	display: block;
-}
-.web-collect .if-intents-support,
-.ios-collect .if-intents-support {
-	display: none;
-}
