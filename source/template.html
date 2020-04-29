@@ -24,28 +24,28 @@
 <div class="hint default-hint-text-size">{{{HINT}}}</div>
 
 <div class="container center" style="margin-top: 2rem;">
-  <svg class="icon" height="36" width="36"><use xlink:href="#icon-textsms" /></svg>
+   <svg class="icon" height="36" width="36"><use xlink:href="#icon-textsms" /></svg>
 </div>
 
 <div class="container">
-  <div class="message-preview-container">
+   <div class="message-preview-container">
       <small class="text-muted text-overline">TO</small>
       <div id="sms-preview-number-container"></div>
       <br />
       <small class="text-muted text-overline">MESSAGE</small>
       <div id="sms-preview-message-container"></div>
-  </div>
+   </div>
 </div>
 
 <div class="container">
-  <a class="button noselect" {{#READONLY}}disabled{{/READONLY}} id="btn-send-sms">Send SMS</a>
+   <a class="button noselect" {{#READONLY}}disabled{{/READONLY}} id="btn-send-sms">Send SMS</a>
 </div>
 
 <div id="status-container"></div>
 
 <!-- Below are the definitions of the SVG icons that we have used in the rest of the template. -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="icon-textsms" viewBox="0 0 24 24">
+   <symbol id="icon-textsms" viewBox="0 0 24 24">
       <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z" fill="#047CC2"/><path d="M0 0h24v24H0z" fill="none"/>
-  </symbol>
+   </symbol>
 </svg>
