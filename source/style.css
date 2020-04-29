@@ -16,6 +16,12 @@
 .text-muted {
 	color: rgba(0,0,0,.5);
 }
+.text-overline {
+	letter-spacing: 1px;
+	font-weight: 500;
+	display: block;
+	margin-bottom: .25rem;
+}
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
