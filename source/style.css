@@ -56,7 +56,9 @@ a.button:active {
 	position: relative;
 	top: 1px;
 }
-a.button:disabled {
+a.button:disabled,
+a.button.disabled {
 	opacity: 0.5;
+	cursor: not-allowed;
 }
 /* END button styles */

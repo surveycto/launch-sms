@@ -10,14 +10,19 @@ var statusContainer = document.getElementById('status-container');
 previewNumberContainer.innerHTML = smsNumber;
 previewMessageContainer.innerHTML = smsMessage;
 
-// define what the "Send SMS" button does
-if (isAndroid) {
-  btnSendSMS.onclick = function () {
-    launchSMSUsingAndroidIntent()
+// Define what the "Send SMS" button does when the field is not marked readonly.
+if (!fieldProperties.READONLY) {
+  if (isAndroid) {
+    btnSendSMS.onclick = function () {
+      launchSMSUsingAndroidIntent()
+    }
+  } else {
+    btnSendSMS.setAttribute('href', 'sms:' + smsNumber + '&body=' + smsMessage)
   }
 } else {
-  btnSendSMS.setAttribute('href', 'sms:' + smsNumber + '&body=' + smsMessage)
+  btnSendSMS.classList.add('disabled')
 }
+
 
 // The following code sets up and launches the Android intent
 function launchSMSUsingAndroidIntent () {
