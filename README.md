@@ -4,14 +4,9 @@
 
 ## Description
 
-This plug-in will compose an SMS text message and launch the default SMS app. It receives a phone number and a message as parameters, and provides a button to launch your SMS app (pre-filling the number and message from the parameters).
+This plug-in will launch and populate the default SMS app on your device. It receives a phone number and a message as parameters, and provides a button to launch your SMS app (pre-filling the number and message from the parameters). The user must tap on the "send" button in the SMS app to send the message.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/launch-sms/raw/master/launch-sms.fieldplugin.zip)
-
-### Features
-
-* **Compose an SMS**  
-  Can be used to automatically compose a text message and launch the default SMS app on the device.
 
 ### Data format
 
@@ -26,7 +21,8 @@ A record of the attempts to launch the SMS app are stored as the field's respons
 
 Please note:
 
-* If you're using this field plug-in on iOS or web forms, then simply clicking the *Send SMS* button is considered a success (there is no error callback).
+* A "success" message on Android does not mean an SMS was sent. This means only that the field plug-in successfully launched and populated the SMS app.
+* If you're using this field plug-in on iOS or web forms, then simply clicking the *Send SMS* button is considered a success (error callback is Android-only).
 
 ## How to use
 
